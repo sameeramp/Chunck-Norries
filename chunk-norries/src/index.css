@@ -1,0 +1,24 @@
+@tailwind base; 
+@tailwind components;
+ @tailwind utilities; 
+
+  /* Animation keyframes for spinning */
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Add animation to the loader */
+  .loader {
+    border-top-color: #3498db;
+    animation: spin 1s linear infinite;
+  }
+
+   /* Style the error indicator */
+   .error-indicator:hover {
+    background-color: #e53e3e; /* Change the background color on hover */
+  }
