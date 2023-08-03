@@ -1,7 +1,7 @@
 
 
 import Category from './Components/Category';
-import Jokes from './Components/Jokes';
+import Jokes from './Components/Jokes.jsx';
 
 
 
