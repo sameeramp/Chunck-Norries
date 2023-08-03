@@ -15,6 +15,7 @@ This project is a web page replication of Chuck Norris Jokes using React JS. It 
   - [Contributing](#contributing)
   - [License](#license)
   - [Contact](#contact)
+  - [Diploy](##diploy)
 
 ## Installation
 
@@ -59,7 +60,9 @@ Please make sure to follow our code formatting and guidelines. We welcome contri
 If you have any questions or feedback, you can reach out to us at:
 
 - Email: sameeramp2000@gmail.com
-
+- 
+##Diploy Link
+https://sameeramp.github.io/Chunck-Norries/
 
 Feel free to get in touch with any questions or suggestions!
 
