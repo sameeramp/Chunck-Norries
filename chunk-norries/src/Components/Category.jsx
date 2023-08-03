@@ -15,7 +15,7 @@ const Category = () => {
     const [alert, setAlert] = useState(false);
 
     const [category, setCategory] = useState('');
-    const [screenSize, setScreenSize] = useState(1500)
+  
 
     let dispatch = useDispatch()
 
@@ -53,21 +53,17 @@ const Category = () => {
         return store.jokeItemReducer.isError
     })
 
-    useEffect(() => {
-        window.addEventListener("resize", () => {
-            setScreenSize(window.innerWidth);
-        })
-    }, [])
-
+   
 
 
 
     return (
 
-        <>
+        <div className="bg-gradient-to-r from-blue-500 to-black  h-fit p-1  flex flex-col items-center justify-center sm:h-200 sm:p-50">
+      
 
 
-            <div className={`grid grid-cols-4 ${screenSize < 1135 && 'grid-cols-3'} ${screenSize < 850 && 'grid-cols-2'} ${screenSize < 300 && 'grid-cols-1'} bg-transparent text-white-lg md:gap-y-5 p-5  md:w-fit`}>
+            <div className={` grid lg:grid-cols-4 md:grid-cols-2 grid-cols-4  bg-transparent text-white-lg md:gap-y-3 p-5 h-fit gap-5 md:w-fit`}>
                 {
                     jokes?.map((card, id) => (
                         <Jokes key={id}
@@ -99,9 +95,9 @@ const Category = () => {
 
 
             </div>
-            <h1 className="m-3 text-4xl text-green-400 animate-bounce font-bold ">Chuck Norries</h1>
+            <h1 className="m-3 text-4xl text-green-400 h-fit p-12  animate-bounce font-bold ">Chuck Norries</h1>
 
-        </>
+            </div>
     );
 }
 
